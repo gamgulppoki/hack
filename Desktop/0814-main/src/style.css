@@ -1,0 +1,154 @@
+#appContainer {
+    text-align: center;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: white; 
+    
+  }
+  
+  /*박스*/
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* 배경 색상 설정 */
+  }
+  
+  .rounded-box {
+    max-width: 500px;
+    background-color: #1F7D79;
+    border: 1px solid #1F7D79;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .memo-box {
+    background-color: #9FE2DF;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: rgb(4, 59, 40);
+  }
+  
+  
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  
+  
+  /* Todo Input */
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #1F7D79;
+    border: 1px solid #1F7D79;
+    color: white;
+  }
+  
+  /* Add Todo Button */
+  button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Todo List */
+  ul {
+    list-style: none;
+    padding: 0;
+    color: black;
+  }
+  
+  /* Todo Item */
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #1F7D79;
+    border-radius: 4px;
+    background-color: #1F7D79;
+    color: white;
+    position: relative; 
+  }
+  
+  li::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white; /* 동그라미 점 색상 */
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+  }
+  
+  
+  
+  /* Completed Todo Item */
+  li.completed {
+    background-color: #1F7D79;
+    text-decoration: line-through;
+  }
+  
+  /* Edit Input */
+  input[type="text"].edit {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  input[type="text"]::placeholder {
+    color: white;
+  }
+  
+  /* Edit Buttons */
+  .edit-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .edit-buttons button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Delete Button */
+  .delete-button {
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }

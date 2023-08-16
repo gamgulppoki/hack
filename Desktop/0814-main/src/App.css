@@ -1,0 +1,88 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 시간 입력 섹션에 둥근 모서리 박스 스타일 적용 */
+.input-section.time-input {
+  display: flex;
+  background-color: #1F7D79;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px; 
+  flex: 1; 
+}
+
+/* 알람 상세 정보 입력 섹션에 둥근 모서리 박스 스타일 적용 */
+.input-section.details-input {
+  display: flex;
+  background-color: #F7F4E8;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  flex: 1; 
+}
+
+.input-section {
+  display: flex; 
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 20px; 
+}
+
+.input-section p {
+  margin-top: -1px;
+  font-size: 13px;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-section input[type="time"],
+.input-section input[type="text"],
+.input-section textarea {
+  width:auto;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.input-section textarea {
+  height: 100px;
+}
+
+.input-section button {
+  background-color: #1F7D79;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.alarms-list {
+  flex: 1;
+}
+
+.alarm-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.alarm-item h2 {
+  margin-top: 0;
+}
+
+.alarm-item button {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

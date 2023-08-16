@@ -1,0 +1,60 @@
+.f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+  }
+
+  .button-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 40px;
+    background-color: #1F7D79;
+  }
+
+  .rounded {
+    border-radius: 10px;
+  }
+ 
+  /*사진*/
+  .icon {
+    width: 200px; 
+    height: 200px; 
+    margin-bottom: 65px;
+  }
+  
+  
+  .login,
+  .signup {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #FBF8E6;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .login {
+    background-color: #FBF8E6;
+    color: #565451;
+  }
+  
+  .signup {
+    background-color: #1F7D79;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  .login:hover,
+  .signup:hover {
+    background-color: #e4e0cd;
+  }
+  
+  .signup:hover {
+    background-color: #309691;
+  }
+  
